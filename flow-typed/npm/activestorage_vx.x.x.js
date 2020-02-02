@@ -13,8 +13,8 @@ declare module 'activestorage' {
       file: File,
       url: string,
       delegate: {
-        +directUploadWillCreateBlobWithXHR?: (xhr: XMLHttpRequest) => mixed,
-        +directUploadWillStoreFileWithXHR?: (xhr: XMLHttpRequest) => mixed,
+        directUploadWillCreateBlobWithXHR?: (xhr: XMLHttpRequest) => mixed,
+        directUploadWillStoreFileWithXHR?: (xhr: XMLHttpRequest) => mixed,
       }
     ): DirectUpload;
 

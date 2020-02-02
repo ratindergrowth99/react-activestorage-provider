@@ -4,7 +4,7 @@
 
 import Upload from './Upload'
 
-jest.mock('activestorage', () => {
+jest.mock('@rails/activestorage', () => {
   return {
     DirectUpload: jest.fn(file => ({
       id: 'id',
@@ -88,7 +88,7 @@ describe('Upload', () => {
     })
 
     describe('if the upload fails', () => {
-      jest.resetModules().doMock('activestorage', () => {
+      jest.resetModules().doMock('@rails/activestorage', () => {
         return {
           DirectUpload: jest.fn(file => ({
             id: 'id',
