@@ -1,7 +1,7 @@
 {
-  "name": "react-activestorage-provider",
-  "version": "0.8.0",
-  "description": "A React component that allows easy file upload using ActiveStorage",
+  "name": "rbngzlv-react-activestorage-provider",
+  "version": "6.0.0",
+  "description": "A React component that allows easy file upload using ActiveStorage (react-activestorage-provider fork)",
   "keywords": [
     "react",
     "rails",
@@ -10,10 +10,13 @@
     "upload"
   ],
   "author": "Cameron Bothner",
+  "contributors": [
+    "rbngzlv"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:cbothner/react-activestorage-provider.git"
+    "url": "git@github.com:rbngzlv/react-activestorage-provider.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -30,8 +33,7 @@
     "test": "jest --coverage"
   },
   "dependencies": {
-    "@babel/runtime": "^7.1.2",
-    "activestorage": "^5.2.0"
+    "@babel/runtime": "^7.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -42,6 +44,7 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@rails/activestorage": "6.0.x",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
@@ -69,7 +72,8 @@
     "rollup-plugin-node-resolve": "^3.0.2"
   },
   "peerDependencies": {
-    "react": "^0.14.9 || ^15.0.0 || ^16.0.0"
+    "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
+    "@rails/activestorage": "6.0.x"
   },
   "files": [
     "dist"
