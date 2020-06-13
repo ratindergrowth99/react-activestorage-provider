@@ -143,6 +143,6 @@ and use it with the following props:
 | `multiple`               | `boolean`<br/>Whether the component should accept multiple files. If true, the model should use `has_many_attached`                     |
 | `onBeforeBlobRequest`    | `({ id: string, file: File, xhr: XMLHttpRequest }) => mixed`<br />A callback that allows you to modify the blob request                 |
 | `onBeforeStorageRequest` | `({ id: string, file: File, xhr: XMLHttpRequest }) => mixed`<br />A callback that allows you to modify the storage request              |
-| `onSuccess`\*            | `(string[]) => mixed`<br />The callback that will be called with the signed ids of the files after the upload is complete               |
+| `onSuccess`\*            | `(string | Object[]) => mixed`<br />The callback that will be called with the signed ids of the files after the upload is complete               |
 | `origin`                 | `{ host?: string, port?: string, protocol?: string }`<br />The origin of your rails server. Defaults to where your React app is running |
 | `render`\*               | `RenderProps => React.Node`<br />Render props                                                                                           |

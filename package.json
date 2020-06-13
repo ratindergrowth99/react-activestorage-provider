@@ -1,5 +1,5 @@
 {
-  "name": "rbngzlv-react-activestorage-provider",
+  "name": "quorak-react-activestorage-provider",
   "version": "6.0.0",
   "description": "A React component that allows easy file upload using ActiveStorage (react-activestorage-provider fork)",
   "keywords": [
@@ -11,12 +11,14 @@
   ],
   "author": "Cameron Bothner",
   "contributors": [
-    "rbngzlv"
+    "rbngzlv",
+    "quorak",
+    "jdalt"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rbngzlv/react-activestorage-provider.git"
+    "url": "git@github.com:quorak/react-activestorage-provider.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -72,8 +74,8 @@
     "rollup-plugin-node-resolve": "^3.0.2"
   },
   "peerDependencies": {
-    "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
-    "@rails/activestorage": "6.0.x"
+    "@rails/activestorage": "6.0.x",
+    "react": "^0.14.9 || ^15.0.0 || ^16.0.0"
   },
   "files": [
     "dist"
