@@ -74,7 +74,7 @@
     "rollup-plugin-node-resolve": "^3.0.2"
   },
   "peerDependencies": {
-    "@rails/activestorage": "6.0.x",
+    "@rails/activestorage": "8.0.x",
     "react": "^0.14.9 || ^15.0.0 || ^16.0.0"
   },
   "files": [

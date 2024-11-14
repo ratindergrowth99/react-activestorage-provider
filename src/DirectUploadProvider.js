@@ -22,6 +22,7 @@ import type {
 export type DelegatedProps = {|
   directUploadsPath?: string,
   multiple?: boolean,
+  serviceName?: string,
   onBeforeBlobRequest?: ({
     id: string,
     file: File,

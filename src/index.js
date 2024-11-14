@@ -73,12 +73,13 @@ class ActiveStorageProvider extends React.Component<Props> {
   }
 
   async _hitEndpointWithSignedIds(signedIds: string[]): Promise<Object> {
-    const { endpoint, multiple } = this.props
+    const { endpoint, multiple, serviceName } = this.props
     const { protocol, host, port, path, method, attribute, model } = endpoint
     const body = {
       [model.toLowerCase()]: {
         [attribute]: multiple ? signedIds : signedIds[0],
       },
+      service_name: serviceName
     }
 
     const response = await fetch(buildUrl({ protocol, host, port, path }), {
